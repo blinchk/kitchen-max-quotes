@@ -1,1 +1,5 @@
-# kitchen-max-quotes
+# Страница с цитатами Макса из сериала кухня
+
+**Технологии:**
+* Python 3.9
+* HTML, CSS, JavaScript

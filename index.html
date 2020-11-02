@@ -6,19 +6,30 @@
     <title>Цитаты Макса из сериала кухня</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/14242603a5.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="getQuote()">
     <nav>
         <div class="site-name">Цитаты Макса из сериала кухня</div>
     </nav>
     <div class="content">
+        <h1>Ваша цитата:</h1>
         <div class="quote">
-            <p>Здесь будет цитата</p>
+            <p class="quote-text">Здесь будет цитата</p>
+            <p class="author">© Максим Лавров</p>
         </div>
         <div class="next-quote-btn">
-            <a href="" id="next-quote">Следующая цитата</a>
+            <a onclick="getQuote()" id="next-quote">Следующая цитата</a>
         </div>
     </div>
-    
+    <footer>
+        <p>&#0169; Nikolas Laus</p>
+        <div class="socials">
+            <a href="https://twitter.com/itscanbeblinchk"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/blinchk"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
