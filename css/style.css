@@ -1,0 +1,37 @@
+:root {
+    --primary-color: #715AFF;
+    --text-color-on-primary: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--text-color-on-primary);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.content {
+    margin: auto;
+    text-align: center;
+}
+
+.next-quote-btn {
+    margin: 20px;
+}
+
+#next-quote {
+    padding: 1rem;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--text-color-on-primary);
+}
+
