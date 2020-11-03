@@ -10,7 +10,7 @@
     <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/14242603a5.js" crossorigin="anonymous"></script>
 </head>
-<body onload="getQuote()">
+<body onload="loadPage()">
     <nav>
         <div class="site-name">Цитаты Макса из сериала кухня</div>
     </nav>
@@ -20,12 +20,13 @@
             <p class="quote-text">Здесь будет цитата</p>
             <p class="author">© Максим Лавров</p>
         </div>
-        <div class="next-quote-btn">
-            <a onclick="getQuote()" id="next-quote">Следующая цитата</a>
+        <div class="btns">
+            <a onclick="nextButtonClick()" id="next-quote" class="btn">Следующая цитата</a>
+            <a onclick="offOnAudio()" id="music-button" class="btn">Выключить музыку</a>
         </div>
     </div>
     <footer>
-        <p>&#0169; Nikolas Laus</p>
+        <p><b>&#0169; Nikolas Laus</b></p>
         <div class="socials">
             <a href="https://github.com/blinchk"><i class="fab fa-github"></i></a>
         </div>

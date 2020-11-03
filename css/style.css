@@ -54,7 +54,6 @@ footer {
 }
 
 .socials a {
-    
     color: black;
     padding: 2px 7px;
     border-radius: 50%;
@@ -69,11 +68,11 @@ footer {
     margin: 2rem;
 }
 
-.next-quote-btn {
+.btns {
     margin: 20px;
 }
 
-#next-quote {
+.btn {
     padding: 1rem;
     text-decoration: none;
     background-color: var(--primary-color);
@@ -83,6 +82,11 @@ footer {
 @media only screen and (max-width: 700px) {
     footer {
         margin-top: 1rem;
+    }
+
+    nav {
+        justify-content: center;
+        text-align: center;
     }
 
     .content {
