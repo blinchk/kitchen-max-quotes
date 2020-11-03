@@ -8,7 +8,6 @@ audio.loop = true;
 function getQuote() {
     $.getJSON("https://raw.githubusercontent.com/blinchk/kitchen-max-quotes/master/quotes.json",
     function (data, textStatus, jqXHR) {
-        console.log(data[Math.random() * data.length+1]);
         var quote_text = data[Math.floor(Math.random() * data.length)];
         $('.quote-text').text(quote_text);
     }
@@ -16,7 +15,6 @@ function getQuote() {
 }
 
 function playAudio() {
-    console.log(audio_playing);
     if (audio_playing == false) {
         audio_playing = true;
         audio.play();
