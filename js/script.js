@@ -10,8 +10,16 @@ function getQuote() {
     function (data, textStatus, jqXHR) {
         var quote_text = data[Math.floor(Math.random() * data.length)];
         $('.quote-text').text(quote_text);
-    }
-);
+        if (audio_isenabled) {
+            var msg = new SpeechSynthesisUtterance();
+            if (audio_playing) {
+                msg.text = quote_text;
+                msg.volume = 0.8;
+                msg.rate = 5;
+                window.speechSynthesis.speak(msg);
+            }
+        }
+    });
 }
 
 function playAudio() {
